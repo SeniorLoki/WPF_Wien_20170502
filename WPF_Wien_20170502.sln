@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesInPraxis", "Delega
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloWPF", "HalloWPF\HalloWPF.csproj", "{DC453C30-AD96-4C95-8387-BAB4B189DBC4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutContainerÜbung", "LayoutContainerÜbung\LayoutContainerÜbung.csproj", "{DF57AEE0-48FC-4DD5-A2C6-89C937F70CD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DC453C30-AD96-4C95-8387-BAB4B189DBC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC453C30-AD96-4C95-8387-BAB4B189DBC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC453C30-AD96-4C95-8387-BAB4B189DBC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF57AEE0-48FC-4DD5-A2C6-89C937F70CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF57AEE0-48FC-4DD5-A2C6-89C937F70CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF57AEE0-48FC-4DD5-A2C6-89C937F70CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF57AEE0-48FC-4DD5-A2C6-89C937F70CD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
