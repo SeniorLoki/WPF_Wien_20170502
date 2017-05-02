@@ -1,25 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows;
 
 namespace DelegatesExample
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+    public delegate string MyDelegate(int zahl, double wert);
+
     public partial class MainWindow : Window
     {
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MyDelegate del = new MyDelegate(MeineMethode);
+
+            MessageBox.Show(del(5, 9.0));
+        }
+
+        private string MeineMethode(int i, double d)
+        {
+            return (i + d).ToString();
+        }
+
         public MainWindow()
         {
             InitializeComponent();

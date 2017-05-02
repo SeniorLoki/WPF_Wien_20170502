@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:DelegatesExample"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Button Content="Delegates! :D" Click="Button_Click" />
     </Grid>
 </Window>
