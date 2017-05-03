@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LayoutContainerÜbung", "La
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{0B5AA8F9-D4FA-4630-A891-E7DD2B685395}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Styles", "Styles\Styles.csproj", "{7E8EA5E6-4D97-4281-988F-2FD17A04BBC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0B5AA8F9-D4FA-4630-A891-E7DD2B685395}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B5AA8F9-D4FA-4630-A891-E7DD2B685395}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B5AA8F9-D4FA-4630-A891-E7DD2B685395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E8EA5E6-4D97-4281-988F-2FD17A04BBC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E8EA5E6-4D97-4281-988F-2FD17A04BBC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E8EA5E6-4D97-4281-988F-2FD17A04BBC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E8EA5E6-4D97-4281-988F-2FD17A04BBC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
