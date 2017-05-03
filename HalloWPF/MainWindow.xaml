@@ -106,7 +106,7 @@
         </StackPanel>
     </Border>-->
     <!-- Grid -->
-    <Grid>
+    <!--<Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="50*"/>
@@ -123,5 +123,49 @@
         <Button Grid.Row="1" 
                 Grid.Column="1" 
                 Background="Red"  />
-    </Grid>
+    </Grid>-->
+
+    <StackPanel>
+        <Button Background="Red" Content="Red" Visibility="Collapsed" />
+        <Button Background="Blue" Content="Blau" />
+        <CheckBox Content="Check me!" IsChecked="{x:Null}" />
+        <StackPanel>
+            <RadioButton Content="RadioButton" />
+            <RadioButton Content="RadioButton" />
+        </StackPanel>
+        <StackPanel>
+            <RadioButton Content="RadioButton" />
+            <RadioButton Content="RadioButton" />
+        </StackPanel>
+
+        <Slider Minimum="0" Maximum="100" 
+                TickPlacement="Both"
+                TickFrequency="10"
+                IsSnapToTickEnabled="True"
+                Orientation="Horizontal"/>
+
+        <ProgressBar Margin="0 20 0 0"
+                     Minimum="0" Maximum="100" 
+                     Value="50"
+                     IsIndeterminate="True"
+                     Height="20"/>
+
+        <Menu>
+            <MenuItem Header="Datei" >
+                <MenuItem Header="Beenden" >
+                    <MenuItem Header="Alles" />
+
+                    <MenuItem Header="Nichts" >
+                        <MenuItem Header="Blablabla" />
+                    </MenuItem>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Bearbeiten" >
+                <MenuItem Command="Copy" Header="Mein Text" />
+                <MenuItem Command="Cut" />
+                <MenuItem Command="Paste" />
+            </MenuItem>
+        </Menu>
+        <TextBox Text="Copy ME!" />
+    </StackPanel>
 </Window>
