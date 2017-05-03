@@ -1,0 +1,49 @@
+﻿<Window x:Class="Resources.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Resources"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    
+    <Window.Resources>
+        <SolidColorBrush x:Key="myBackgroundColor" Color="GreenYellow" />
+        <system:Double x:Key="Width">250</system:Double>
+    </Window.Resources>
+    
+    <StackPanel Margin="50">
+        <Button Content="Change Color"
+                Click="ChangeColorButton_Click"
+                Width="{StaticResource Width}"
+                Background="{StaticResource myBackgroundColor}" />
+
+        <Button Content="Change Instance" Margin="0 20 0 0" 
+                Width="{StaticResource Width}"
+                Click="ChangeInstanceButton_Click"
+                Background="{StaticResource myBackgroundColor}" />
+
+        <Button Content="Change Instance" Margin="0 20 0 0" 
+                Name="ChangeInstanceButton"
+                Click="ChangeInstanceButton_Click"
+                Background="{DynamicResource myBackgroundColor}" />
+
+        <Button Content="Change Instance To Other Type" Margin="0 20 0 0" 
+                Click="ChangeInstanceToOtherTypeButton_Click"
+                Background="{DynamicResource myBackgroundColor}" />
+
+        <StackPanel Name="myStackPanel" Margin="0 20 0 0" >
+            <StackPanel.Resources>
+                <SolidColorBrush x:Key="otherBrush" Color="Lavender" />
+                <SolidColorBrush x:Key="myBackgroundColor" Color="Red" />
+            </StackPanel.Resources>
+
+            <Button Content="Click Me!!" 
+                Background="{StaticResource otherBrush}" />
+
+            <Button Content="Click Me Too!" Margin="0 20 0 0" 
+                Background="{StaticResource myBackgroundColor}" />
+        </StackPanel>
+    </StackPanel>
+</Window>
