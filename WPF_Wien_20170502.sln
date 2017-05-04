@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativeSourceFindAncestor"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RelativeSourcePreviousData", "RelativeSourcePreviousData\RelativeSourcePreviousData.csproj", "{7C56A77E-2A78-424E-9046-2985378580E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MySpecialResources", "MySpecialResources\MySpecialResources.csproj", "{5E25D223-C513-44C0-9B09-4324ED329EDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{7C56A77E-2A78-424E-9046-2985378580E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C56A77E-2A78-424E-9046-2985378580E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C56A77E-2A78-424E-9046-2985378580E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E25D223-C513-44C0-9B09-4324ED329EDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E25D223-C513-44C0-9B09-4324ED329EDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E25D223-C513-44C0-9B09-4324ED329EDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E25D223-C513-44C0-9B09-4324ED329EDB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

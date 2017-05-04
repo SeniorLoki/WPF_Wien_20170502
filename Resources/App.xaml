@@ -4,6 +4,17 @@
              xmlns:local="clr-namespace:Resources"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="MyResources.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MySpecialResources;component/MySpecialResources.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+        <!--
+            
+            <ResourceDictionary Source="pack://application:,,,/YourAssembly;component/Subfolder/YourResourceFile.xaml"/>
+            
+            -->
     </Application.Resources>
 </Application>

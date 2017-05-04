@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Binding"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="350" Width="525"
+        Background="{Binding ElementName=colorTextBox, Path=Text}">
 
     <Window.Resources>
-        <SolidColorBrush x:Key="myBrusch" Color="Red" />
+        <SolidColorBrush x:Key="myBrush" Color="Red" />
     </Window.Resources>
     
     <StackPanel Margin="50">
@@ -17,13 +18,18 @@
 
         <ProgressBar Minimum="0" Maximum="100" Height="20" Margin="0 20 0 0"
                      Value="{Binding ElementName=mySlider, Path=Value}"
-                     Foreground="{Binding Source={StaticResource myBrusch}}"/>
+                     Foreground="{Binding Source={StaticResource myBrush}}"/>
 
         <TextBlock Margin="0 20 0 0" HorizontalAlignment="Center"
                    Text="{Binding ElementName=mySlider, Path=Value, StringFormat=C, ConverterCulture=de-DE}" />
 
         <TextBox Margin="0 20 0 0" HorizontalContentAlignment="Center"
                  Text="{Binding ElementName=mySlider, Path=Value, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay, Delay=200}" />
+
+        <TextBox Name="colorTextBox" Margin="0 20 0 0" Text="lightyellow"/>
+
+        <Rectangle Height="50" Width="50"
+                   Fill="{Binding ElementName=colorTextBox, Path=Text}" />
 
     </StackPanel>
 </Window>

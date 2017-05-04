@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:Resources"
         xmlns:system="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="600" Width="525"
+        Background="{StaticResource importantForegroundBrush}">
     
     <Window.Resources>
         <SolidColorBrush x:Key="myBackgroundColor" Color="GreenYellow" />
@@ -45,5 +46,11 @@
             <Button Content="Click Me Too!" Margin="0 20 0 0" 
                 Background="{StaticResource myBackgroundColor}" />
         </StackPanel>
+
+        <Grid Margin="0 20 0 0">
+            <ProgressBar Value="0.5" Name="progress" Maximum="1" Foreground="{StaticResource defaultBackgroundColor}" />
+            <TextBlock HorizontalAlignment="Center"
+                       Text="{Binding ElementName=progress, Path=Value, StringFormat=P}" />
+        </Grid>
     </StackPanel>
 </Window>
