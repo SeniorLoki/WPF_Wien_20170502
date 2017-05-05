@@ -8,3 +8,10 @@ https://cleancoders.com/videos
 http://artofunittesting.com/
 https://www.amazon.de/Art-Unit-Testing-Roy-Osherove/dp/1617290890/ref=sr_1_1?s=books-intl-de&ie=UTF8&qid=1493909431&sr=1-1&keywords=the+art+of+unit+testing
 
+Programme: 
+	https://www.linqpad.net/
+	https://www.getpostman.com/
+	http://www.telerik.com/fiddler
+
+Dummy Daten
+http://objectfiller.net/

@@ -49,6 +49,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloBlend", "HalloBlend\Ha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DependencyProperties", "DependencyProperties\DependencyProperties.csproj", "{BDE4301E-D8B3-4ED3-AEC9-F269225DC5E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloMVVM", "HalloMVVM\HalloMVVM.csproj", "{BDFA8A89-8A35-4B8E-99FE-D674BC92CF89}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sindschar", "Sindschar", "{EB1B09E2-5A5E-4218-B3DE-0AC2AA683CBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sindschar.UserInterface", "Sindschar.UserInterface\Sindschar.UserInterface.csproj", "{C7488CD3-D9A2-471B-A8B7-1D340A54E840}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sindschar.Core", "Sindschar.Core\Sindschar.Core.csproj", "{0F5AC260-B70E-435B-B134-097B48642D6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SindSchar.Data", "SindSchar.Data\SindSchar.Data.csproj", "{3FFF383C-33EB-4DE6-914B-D5A5CFF6E029}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,8 +157,29 @@ Global
 		{BDE4301E-D8B3-4ED3-AEC9-F269225DC5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDE4301E-D8B3-4ED3-AEC9-F269225DC5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDE4301E-D8B3-4ED3-AEC9-F269225DC5E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDFA8A89-8A35-4B8E-99FE-D674BC92CF89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDFA8A89-8A35-4B8E-99FE-D674BC92CF89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDFA8A89-8A35-4B8E-99FE-D674BC92CF89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDFA8A89-8A35-4B8E-99FE-D674BC92CF89}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7488CD3-D9A2-471B-A8B7-1D340A54E840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7488CD3-D9A2-471B-A8B7-1D340A54E840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7488CD3-D9A2-471B-A8B7-1D340A54E840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7488CD3-D9A2-471B-A8B7-1D340A54E840}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F5AC260-B70E-435B-B134-097B48642D6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F5AC260-B70E-435B-B134-097B48642D6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F5AC260-B70E-435B-B134-097B48642D6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F5AC260-B70E-435B-B134-097B48642D6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FFF383C-33EB-4DE6-914B-D5A5CFF6E029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FFF383C-33EB-4DE6-914B-D5A5CFF6E029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FFF383C-33EB-4DE6-914B-D5A5CFF6E029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FFF383C-33EB-4DE6-914B-D5A5CFF6E029}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C7488CD3-D9A2-471B-A8B7-1D340A54E840} = {EB1B09E2-5A5E-4218-B3DE-0AC2AA683CBC}
+		{0F5AC260-B70E-435B-B134-097B48642D6B} = {EB1B09E2-5A5E-4218-B3DE-0AC2AA683CBC}
+		{3FFF383C-33EB-4DE6-914B-D5A5CFF6E029} = {EB1B09E2-5A5E-4218-B3DE-0AC2AA683CBC}
 	EndGlobalSection
 EndGlobal

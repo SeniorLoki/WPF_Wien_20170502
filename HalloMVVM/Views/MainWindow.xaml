@@ -1,0 +1,40 @@
+﻿<Window x:Class="HalloMVVM.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:HalloMVVM.ViewModels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525"
+        DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
+    <!--<Window.DataContext>
+        <vm:MainWindowViewModel />
+    </Window.DataContext>-->
+
+    <Window.InputBindings>
+        <KeyBinding Key="C" Modifiers="Ctrl+Alt" Command="{Binding ChangeTextCommand}" CommandParameter="Shortcut" />
+    </Window.InputBindings>
+    
+    
+    <StackPanel Margin="50">
+        <Menu>
+            <MenuItem Header="_Datei" >
+                <MenuItem Header="_Change Text" Command="{Binding ChangeTextCommand}" CommandParameter="Menu" />
+            </MenuItem>
+        </Menu>
+        
+        <TextBlock FontSize="26" Foreground="#FF1212AC" FontFamily="Microsoft YaHei UI" 
+                   HorizontalAlignment="Center"
+                   Text="{Binding WelcomeText}" />
+
+        <TextBox Margin="0 8 0 0" HorizontalContentAlignment="Center"
+                 Text="{Binding WelcomeText, UpdateSourceTrigger=PropertyChanged}" />
+
+        <Button Content="ChangeText" Margin="0 8 0 0"
+                Command="{Binding ChangeTextCommand}"
+                CommandParameter="mein wichtiger Text aus dem XAML"/>
+
+        <Button Margin="0 50 0 0" Content="New Window" Click="Button_Click" />
+
+    </StackPanel>
+</Window>

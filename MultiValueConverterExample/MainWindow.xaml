@@ -55,7 +55,7 @@
             </StackPanel.Resources>
 
             <StackPanel>
-                <Slider Name="ASlider" />
+                <Slider Name="ASlider" Value="255" />
                 <TextBlock Text="A" />
             </StackPanel>
             
